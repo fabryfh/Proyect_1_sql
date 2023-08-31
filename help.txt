@@ -1,0 +1,41 @@
+
+INSERT INTO categories (name) VALUES 
+  ('Foundations'),
+  ('Front-End Dev with React'),
+  ('Node.js');
+
+INSERT INTO level_courses (title) VALUES 
+  ('Beginner'),
+  ('Intermediate'),
+  ('Advanced');
+
+INSERT INTO roles (name) VALUES 
+  ('Students'),
+  ('Teachers'),
+  ('Admins');
+
+INSERT INTO courses (title, description, level_id, category_id) VALUES 
+  ('Welcome to Foundations', 'In foundations we are gonna learn how program using HTML, CSS and Javascript', 1, 1),
+  ('Welcome to React', 'In React we are gonna build apps and web sites.', 2, 2),
+  ('Welcome to Node.js', 'In Node we are gonna learn how backend works', 3, 3);
+
+INSERT INTO users (name, email, password, age, rol_id) VALUES 
+  ('Fabrizzio Heredia', 'fabry@academlo.com', 26,'1003706711', 1),
+  ('Steven Contreras', 'steven@academlo.com', 27,'1723479111', 2),
+  ('Jesús Perez', 'elYisus@academlo.com', 42,'1708642444', 3);
+
+INSERT INTO courses_videos (title, url, course_id) VALUES 
+  ('Foundations 1', 'URL course 1', 1),
+  ('React 1', 'URL course 2', 2),
+  ('NodeJs 1', 'URL course 3', 3);
+
+INSERT INTO users_courses (user_id, course_id) VALUES 
+  (1, 1),
+  (2, 2),
+  (3, 3);
+
+  
+
+  -- PATH CON LOS / CAMBIADOS
+
+   \i 'C:/Users/fhere/Desktop/Academlo/3 Node/ARCHIVOS CLASE/primer_entregable/Untitled.sql';
